@@ -1,0 +1,44 @@
+<html style="background-color: #333; color: #eee">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+        <!-- turn regular select with class 'js-select2' into a select2 widget -->
+        <script>
+            $(document).ready(function() {
+                $('.js-select2').select2();
+            });
+        </script>
+
+    </head>
+    <body>
+        <hr/>
+        <h2>Regular Select</h2>
+        <select name="names1" class="js-regular-select" style="width: 300px">
+            <option value="1">Tyler</option>
+            <option value="2">Jess</option>
+            <option value="3">Dad</option>
+            <option value="4">Mom</option>
+            <option value="5">Sam</option>
+            <option value="6">Bill</option>
+            <option value="7">Hank</option>
+            <option value="8">Jim</option>
+            <option value="9">Bob</option>
+        </select>
+        <hr/>
+        <h2>Select2</h2>
+        <select name="names2" class="js-select2" style="width: 300px">
+            <option value="1">Tyler</option>
+            <option value="2">Jess</option>
+            <option value="3">Dad</option>
+            <option value="4">Mom</option>
+            <option value="5">Sam</option>
+            <option value="6">Bill</option>
+            <option value="7">Hank</option>
+            <option value="8">Jim</option>
+            <option value="9">Bob</option>
+        </select>
+        <hr/>
+    </body>
+</html>

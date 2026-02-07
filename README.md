@@ -4,3 +4,4 @@ This is a repo for small demos and examples I create as I wrap my mind around co
 
 ## So far, I've made demos for:
 - A simple ajax request
+- A Select2 select element
