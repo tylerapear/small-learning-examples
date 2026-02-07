@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html style="background-color: #333; color: #eee;">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                console.log(xhttp)
+                xhttp.onload = function() {
+                    $('#demo').html(this.responseText)
+                }
+                xhttp.open("GET", 'ajax_info.txt', true);
+                xhttp.send();
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <div id="demo">
+            <h2>Ajax will change this</h2>
+            <button type="button" onclick="loadDoc()">Change content</button>
+        </div>
+    </body>
+
+</html>
